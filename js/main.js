@@ -10,6 +10,12 @@ function go() {
     
   });
 
+  $("#whatsapp-quote").click(function() {
+    var quote = $("#text").html();
+    var author = $("#author").html();
+    var url = "https://api.whatsapp.com/send?text=" + quote + " - " + author;
+    window.open(url, '_blank');
+  });
   // Generate a random quote when window is loaded initially
   genRandQuote();
 }
