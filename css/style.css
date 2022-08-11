@@ -11,7 +11,18 @@ body {
 }
 
 .bg {
-  background-color: white;
+  background-color: rgb(225, 215, 215);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding: 10px;
 }
 #author{
   display: flex;
@@ -28,16 +39,13 @@ body {
 #quote-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: auto;
-  height: 90vh;
+  height: auto;
   padding: 2rem;
-  border: 1px solid black;
-  border-radius: 1rem;
-  background-color: #f5f5f5;
   text-align: center;
-
+  transition: all 0.3s ease-in-out;
   }
 
 #text {
@@ -51,8 +59,18 @@ body {
 
 #buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 2rem;
+}
+#buttons a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  transition: all 0.3s ease-in-out;
 }
